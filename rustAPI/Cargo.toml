@@ -1,0 +1,17 @@
+[package]
+name = "first"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+mongodb = "2.0"
+tokio = { version = "1", features = ["full"] }
+futures = "0.3"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+warp = "0.3"
+bson = "2.0"
+
+# Optional additions for improved error handling
+thiserror = "1.0"
+anyhow = "1.0"
